@@ -1,5 +1,41 @@
 <!doctype html>
-<html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LidKeep Updates</title></head>
-<body><main><h1>LidKeep Updates</h1><p>This site hosts the signed update feed for LidKeep.</p></main></body>
-</html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="LidKeep 是免费、无需登录的 MacBook 合盖运行工具，支持倒计时与电池策略。">
+<title>LidKeep · MacBook 合盖继续运行</title>
+<style>
+:root{color-scheme:light dark;font:17px/1.7 system-ui,-apple-system,sans-serif}
+body{margin:0;background:Canvas;color:CanvasText}main{max-width:38rem;margin:8vh auto;padding:1.5rem}
+h1{font-size:2.8rem;line-height:1.1;margin-bottom:1rem}h2{font-size:1.1rem;margin-top:2rem}
+a{color:LinkText}.download{display:inline-block;background:#1769db;color:white;padding:.7rem 1.3rem;border-radius:.6rem;text-decoration:none;font-weight:600}
+a:focus-visible{outline:3px solid Highlight;outline-offset:4px}.meta,.note{font-size:.9rem;opacity:.8}ol{padding-left:1.4rem}
+</style>
+</head>
+<body><main>
+<h1>LidKeep</h1>
+<p>让 MacBook 合盖后继续运行。免费，无需登录或激活。</p>
+<p>在顶栏开启或关闭，按需设置倒计时和电池策略。退出或安全条件触发后恢复休眠，重开 App 不自动续开。</p>
+<p><a class="download" id="download" href="https://github.com/ysun198/lidkeep-updates/releases/tag/lidkeep-update-assets">下载 LidKeep</a></p>
+<p class="meta"><span id="version">正式版</span> · macOS 15 及以上 · Apple Silicon MacBook</p>
+<h2>安装与使用</h2>
+<ol><li>打开 DMG，将 LidKeep 拖入“应用程序”。</li><li>首次打开时，按 macOS 提示允许后台服务。</li><li>从顶栏开启合盖运行，使用完毕后关闭。后续更新可在 App 内检查并确认安装。</li></ol>
+<p class="note">开启时请保持通风。全局禁眠设置依赖软件保护链恢复，不能代替硬件保护或对使用环境的判断。</p>
+<p class="meta"><a href="https://github.com/ysun198/lidkeep-updates/releases/tag/lidkeep-update-assets">所有发行文件</a> · <a href="appcast.xml">签名更新清单</a></p>
+</main>
+<script>
+(async()=>{try{
+ const response=await fetch('appcast.xml');if(!response.ok)return;
+ const doc=new DOMParser().parseFromString(await response.text(),'application/xml');
+ const ns='http://www.andymatuschak.org/xml-namespaces/sparkle';
+ const text=(item,key)=>item.getElementsByTagNameNS(ns,key)[0]?.textContent||'';
+ const items=[...doc.querySelectorAll('channel > item')].sort((a,b)=>Number(text(b,'version'))-Number(text(a,'version')));
+ const item=items[0];if(!item)return;
+ const url=new URL(item.querySelector(':scope > enclosure')?.getAttribute('url')||'');
+ if(url.protocol!=='https:'||url.host!=='github.com'||!url.pathname.startsWith('/ysun198/lidkeep-updates/releases/download/lidkeep-update-assets/'))return;
+ document.getElementById('download').href=url.href;
+ document.getElementById('version').textContent=text(item,'shortVersionString')||'正式版';
+}catch{}})();
+</script>
+</body></html>
