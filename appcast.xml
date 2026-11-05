@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+-->
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>LidKeep</title>
+        <item>
+            <title>0.32.1</title>
+            <pubDate>Fri, 06 Nov 2026 02:24:24 +0800</pubDate>
+            <sparkle:version>151</sparkle:version>
+            <sparkle:shortVersionString>0.32.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <sparkle:releaseNotesLink sparkle:edSignature="iVJaULbpsTUOAazGizRdQXQe4USKBA0Kial+JZizQrh4e5ojY/Kb8OK2D1kRxktmGFm/k4VpTOmoKJ4ZO5g2Cw==" sparkle:length="851">https://github.com/ysun198/lidkeep-updates/releases/download/lidkeep-update-assets/LidKeep-0.32.1-151-arm64.md</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/ysun198/lidkeep-updates/releases/download/lidkeep-update-assets/LidKeep-0.32.1-151-arm64.dmg" length="4405865" type="application/octet-stream" sparkle:edSignature="YzTvuELGqGB65b3B1A7ZVCWvGT9G7DQRzVqPUSIDFi/4+h9QoAbdEbPExmXj0xsU6oeDC1gi214NHgE4h4fQBQ=="/>
+        </item>
+    </channel>
+</rss>
+<!-- sparkle-signatures:
+edSignature: PDNSYG8+YTdmg7NxegjwraFuB+Q/G+wxKlMX0PlY9fj5ZSwvfbb3IDcXr3ylfLxIZShbQNCJvaQV27w84LMNBw==
+length: 1454
+-->
