@@ -6,6 +6,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>LidKeep</title>
         <item>
+            <title>0.32.2</title>
+            <pubDate>Fri, 06 Nov 2026 03:22:38 +0800</pubDate>
+            <sparkle:version>152</sparkle:version>
+            <sparkle:shortVersionString>0.32.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <sparkle:releaseNotesLink sparkle:edSignature="7P2i+ZO8hiC+VayO5ro+5Yg+YQO8lswa5mllJsfBOscJB9kD7kWGwGqVHppTtD5pcuXh7F7fi3yafe/SdESJCA==" sparkle:length="512">https://github.com/ysun198/lidkeep-updates/releases/download/lidkeep-update-assets/LidKeep-0.32.2-152-arm64.md</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/ysun198/lidkeep-updates/releases/download/lidkeep-update-assets/LidKeep-0.32.2-152-arm64.dmg" length="4406096" type="application/octet-stream" sparkle:edSignature="/T3Dmls/BDOkNejrwVk24VGHCDpOL4bTE/N93TrjKRcxgwmTwUqnSwSOPzCNyEX1BhHatH7IAeBsQQMWJuq2Aw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/ysun198/lidkeep-updates/releases/download/lidkeep-update-assets/LidKeep152-151.delta" sparkle:deltaFrom="151" length="15218" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="w3Nkd7fkScMsy99rLQiN4Cdpw+uy+R7vpRzbDRXRFjxEWH15FcsLRD3ATyxWOMY8nk8uPH2NwUyWcAbY0pyfAQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.32.1</title>
             <pubDate>Fri, 06 Nov 2026 02:24:24 +0800</pubDate>
             <sparkle:version>151</sparkle:version>
@@ -18,6 +31,6 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: PDNSYG8+YTdmg7NxegjwraFuB+Q/G+wxKlMX0PlY9fj5ZSwvfbb3IDcXr3ylfLxIZShbQNCJvaQV27w84LMNBw==
-length: 1454
+edSignature: JSrKBUGfkqHCktjVjOHLR4PzYrfvjWNnOFck6i5dTphBzBM+mC51fId6h76FilKXTUomj+GJfxBds8i/RqgzDw==
+length: 2960
 -->
